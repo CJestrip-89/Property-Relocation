@@ -1,0 +1,287 @@
+body{
+    background-color:#404040 ;
+    margin-right: auto;
+    margin-left: auto ;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    overflow:auto;
+
+}
+
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9rem;
+    width: 100%;
+    border-radius: 10PX 10PX 0 0;
+    overflow: hidden;
+    box-shadow:0 0 20px rgba(0,0,0.0.25) ;
+    float: none;
+    text-align: center;
+
+
+  }
+
+  .content-table thead tr {
+    background-color: #63BBF2;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  .content-table th,
+  .content-table td{
+      padding: 12px 15px;
+  }
+
+  .content-table tbody tr td{
+      border-bottom: 1px solid #63BBF2;
+  }
+
+  .content-table tbody tr:nth-of-type(odd){
+      color: white;
+      font-size: 15px;
+  }
+
+  .content-table tbody tr:nth-of-type(even){
+      background-color: #f3f3f3;
+      font-size: 15px;
+
+  }
+
+  .content-table tbody tr:last-of-type{
+      border-bottom: 2px solid #63BBF2  ;
+
+  }
+
+  button{
+      background: none;
+      color: #ccc;
+      width: 45px;
+      height: 35px;
+      border: 2px solid #63BBF2;
+      font-size: 15px;
+      border-radius: 4px ;
+      transition: .6s;
+      overflow: hidden;
+
+  }
+
+  button:focus{
+      outline:none;
+  }
+
+  /* button:before{
+      content: '';
+      display: block;
+      position: absolute;
+      background: rgba(255,255,255,.5);
+      width: 60px;
+      height: 100%;
+      left: 0;
+      right: 0;
+      opacity: .5s;
+      filter: blur(30px);
+      transform: translateX(-130px) skewX(-15deg);
+
+  }
+
+  button:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,.2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(15deg);
+  } */
+
+  button:hover{
+      background: #63BBF2;
+      cursor: pointer;
+      color: white;
+    }
+
+  button:hover:before{
+      transform: translateX(300px) skewX(-15deg);
+      opacity: .6;
+      transition: .7s;
+
+    }
+
+    button:hover:after{
+        transform: translateX(300px) skewX(-15deg);
+        opacity: 1;
+        transition: .7s;
+
+    }
+
+    /* Large tablet */
+  @media only screen and (min-width:768px) and (max-width: 1024px){
+
+        .container{
+            width: 95%;
+        }
+
+        .content-table {
+            width: 90%;
+            font-size: .85rem;
+        }
+
+        .content-table th tr{
+            width: 90%;
+            font-size: .85rem;
+        }
+
+        button{
+            background: none;
+            color: #ccc;
+            width: 45px;
+            height: 35px;
+            border: 2px solid #63BBF2;
+            font-size: 15px;
+            border-radius: 4px ;
+            transition: .6s;
+            overflow: hidden;
+        }
+
+        button:focus{
+            outline:none;
+        }
+
+        button:hover{
+            background: #63BBF2;
+            cursor: pointer;
+            color: white;
+        }
+
+        button:hover:before{
+            transform: translateX(300px) skewX(-15deg);
+            opacity: .6;
+            transition: .7s;
+        }
+
+        button:hover:after{
+            transform: translateX(300px) skewX(-15deg);
+            opacity: 1;
+            transition: .7s;
+        }
+
+  }
+
+  /* Small tablet */
+
+  @media only screen and (min-width:560px) and (max-width: 767px){
+      .container{
+          width: 95%;
+      }
+
+      .content-table{
+          width: 90%;
+          font-size: .85rem;
+      }
+
+      .content-table th tr{
+            width: 90%;
+            font-size: .85rem;
+        }
+
+        button{
+            background: none;
+            color: #ccc;
+            width: 45px;
+            height: 35px;
+            border: 2px solid #63BBF2;
+            font-size: 15px;
+            border-radius: 4px ;
+            transition: .6s;
+            overflow: hidden;
+        }
+
+        button:focus{
+            outline:none;
+        }
+
+        button:hover{
+            background: #63BBF2;
+            cursor: pointer;
+            color: white;
+        }
+
+        button:hover:before{
+            transform: translateX(300px) skewX(-15deg);
+            opacity: .6;
+            transition: .7s;
+        }
+
+        button:hover:after{
+            transform: translateX(300px) skewX(-15deg);
+            opacity: 1;
+            transition: .7s;
+        }
+
+
+  }
+
+  /* Smart Phone */
+
+  @media only screen and (min-width: 240px) and (max-width:560px){
+
+        .container{
+          width: 100%;
+        }
+
+      .content-table{
+          width: 100%;
+          font-size: .85rem;
+        }
+
+      .content-table th tr{
+            width: 100%;
+            font-size: .85rem;
+        }
+
+        button{
+            background: none;
+            color: #ccc;
+            width: 45px;
+            height: 35px;
+            border: 2px solid #63BBF2;
+            font-size: 15px;
+            border-radius: 4px ;
+            transition: .6s;
+            overflow: hidden;
+        }
+
+        button:focus{
+            outline:none;
+        }
+
+        button:hover{
+            background: #63BBF2;
+            cursor: pointer;
+            color: white;
+        }
+
+        button:hover:before{
+            transform: translateX(300px) skewX(-15deg);
+            opacity: .6;
+            transition: .7s;
+        }
+
+        button:hover:after{
+            transform: translateX(300px) skewX(-15deg);
+            opacity: 1;
+            transition: .7s;
+        }
+  }
